@@ -1,0 +1,89 @@
+for-- Paraqoque(pan i=0; i > 12; i++;){contenido}
+
+declaracion variable string --- agusticidad ububue variable1 = "vaquito"
+declaracion variable int ---agusticidad pan variable1 = 777
+
+ifelse--- vasir(x > 4) {contenido} novasir {contenido}
+
+funcion --- Vuelaoque siono (){contenido}
+
+
+
+
+gramatica 
+
+
+S -> AG V | VQ TT | PQ CL | VS IF
+
+TT -> F | M
+------------------------------------------------------------------------
+V -> TP V2
+V2 -> ID VL
+------------------------------------------------------------------------
+VL -> AS VL2 | ε 
+VL2 -> CM VL3 | N
+VL3 -> ID CM
+------------------------------------------------------------------------
+F ->  ID F2
+F2 -> PA F3
+F3 -> P F4
+F4 -> PC F5
+F5 -> LA F6
+F6 -> C LC
+------------------------------------------------------------------------
+P -> TP ID
+------------------------------------------------------------------------
+CL -> PA CL2
+CL2 -> V CL3
+CL3 -> PT CL4
+CL4 -> ID CL5 
+CL5 -> OP CL6
+CL6 -> ON CL7
+CL7 -> PT CL8 
+CL8 -> ID CL9
+CL9 -> IN CL10
+CL10 -> PT CL11
+CL11 -> PC CL12
+CL12 -> LA CL13
+CL13 -> C LC
+------------------------------------------------------------------------
+IF -> PA IF2
+IF2 -> CD IF3
+IF3 -> PC IF4
+IF4 -> LA IF5
+IF5 -> C IF6
+IF6 -> LC IF7
+IF7 -> NS IF8
+IF8 -> LA IF9
+IF9 -> C LC
+------------------------------------------------------------------------
+CD -> ID CD2
+CD2 -> OP ON
+------------------------------------------------------------------------
+ON -> ID | N
+------------------------------------------------------------------------
+M -> SO M2
+M2 -> PA M3
+M3 -> PC M4
+M4 -> LA M5
+M5 -> C LC
+
+VS -> 'vasir'
+NS -> 'novasir'
+SO -> 'siono'
+ID ->[a-zA-Z_][a-zA-Z_0-9]*
+N -> [0-9][0-9]*
+AG -> 'agusticidad'
+TP -> 'pan' | 'ububue'
+C -> 'contenido'
+PQ -> 'Paraqoque'
+AS -> '='
+CM -> '"'
+PA -> '('
+PC -> ')'
+LA -> '{'
+LC -> '}'
+PT -> ';'
+OP -> '<' | '>' | '==' | '>=' | '<=' | '!=' 
+IN -> '++'
+VQ -> 'Vuelaoque'
