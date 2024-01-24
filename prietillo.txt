@@ -1,11 +1,8 @@
-for-- Paraqoque(pan i=0; i > 12; i++;){contenido}
-
-declaracion variable string --- agusticidad ububue variable1 = "vaquito"
-declaracion variable int ---agusticidad pan variable1 = 777
-
-ifelse--- vasir(x > 4) {contenido} novasir {contenido}
-
-funcion --- Vuelaoque siono (){contenido}
+Paraqoque(pan i=0; i > 12; i++;){contenido}
+agusticidad ububue variable1 = "vaquito"
+agusticidad pan variable1 = 777
+vasir(x > 4) {contenido} novasir {contenido}
+    
 
 
 
